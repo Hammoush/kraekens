@@ -1,0 +1,25 @@
+<?php
+    $sql="SELECT * FROM  zonders";
+    $stmt=$con->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+
+
+?>
+
+    <div class="frontpage">
+        <?php
+        foreach ($result as $row) { ?>
+            <div>
+                <p ><?php echo $row['zname']; ?></p>
+                <p><?php echo $row['discribe']; ?></p>
+                <p><a href="programaoverzicht.php?idzonder=<?php echo $row['idzonder']; ?> ">summery programm</a></p>
+                
+                <p>
+                    <a  href="#">edit</a>
+                    <a href="#">delete</a>
+                    
+                </p>
+            </div>
+
+       <?php } ?>

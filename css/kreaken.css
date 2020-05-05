@@ -1,0 +1,39 @@
+
+body, ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+
+
+}
+li a
+{
+    text-decoration: none;
+}
+
+div#content, div#footer, div#menu{
+    margin: auto;
+    width: 80% ;
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+div.frontpage{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap:10px;
+
+}
+div.frontpage div{
+    height: 200px;
+    background-color: darkgray;
+
+}
+
+
+div.frontpage div p{
+                text-align: center;
+            }
